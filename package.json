@@ -1,0 +1,36 @@
+{
+  "name": "portafolio-db-cv-data-v1",
+  "version": "1.0.0",
+  "description": "Motor de Sincronización Data-as-Code para CV Maestro",
+  "main": "scripts/sync-manager.js",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-manager.js",
+    "test": "node scripts/test-sync.js",
+    "validate": "node scripts/utils/validator.js",
+    "version:check": "node scripts/version-manager.js check",
+    "version:bump": "node scripts/version-manager.js bump",
+    "changelog:generate": "node scripts/version-manager.js changelog",
+    "changelog:view": "node scripts/version-manager.js view"
+  },
+  "keywords": [
+    "data-as-code",
+    "cv",
+    "airtable",
+    "cosmos-db",
+    "sync"
+  ],
+  "author": "Ninkovski Morales",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/cosmos": "^4.1.1",
+    "airtable": "^0.12.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

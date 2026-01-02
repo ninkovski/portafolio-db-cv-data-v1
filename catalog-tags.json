@@ -1,0 +1,252 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-01-01",
+  "tags": [
+    {
+      "id": "t-java11",
+      "nombre": "Java 11",
+      "categoria": "Language",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-java17",
+      "nombre": "Java 17",
+      "categoria": "Language",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-springboot",
+      "nombre": "Spring Boot",
+      "categoria": "Framework",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-spring-cloud",
+      "nombre": "Spring Cloud",
+      "categoria": "Framework",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-azure-functions",
+      "nombre": "Azure Functions",
+      "categoria": "Cloud",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-azure-cosmosdb",
+      "nombre": "Azure Cosmos DB",
+      "categoria": "Cloud",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-azure-devops",
+      "nombre": "Azure DevOps",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-microservices",
+      "nombre": "Microservicios",
+      "categoria": "Framework",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-rest-api",
+      "nombre": "REST API",
+      "categoria": "Framework",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-sql",
+      "nombre": "SQL",
+      "categoria": "Language",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-oracle",
+      "nombre": "Oracle Database",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-postgresql",
+      "nombre": "PostgreSQL",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-docker",
+      "nombre": "Docker",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-kubernetes",
+      "nombre": "Kubernetes",
+      "categoria": "Cloud",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-git",
+      "nombre": "Git",
+      "categoria": "Tool",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-jenkins",
+      "nombre": "Jenkins",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-maven",
+      "nombre": "Maven",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-junit",
+      "nombre": "JUnit",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-mockito",
+      "nombre": "Mockito",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-kafka",
+      "nombre": "Apache Kafka",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-redis",
+      "nombre": "Redis",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-mongodb",
+      "nombre": "MongoDB",
+      "categoria": "Tool",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-react",
+      "nombre": "React",
+      "categoria": "Framework",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-angular",
+      "nombre": "Angular",
+      "categoria": "Framework",
+      "nivel": "Básico"
+    },
+    {
+      "id": "t-typescript",
+      "nombre": "TypeScript",
+      "categoria": "Language",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-javascript",
+      "nombre": "JavaScript",
+      "categoria": "Language",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-python",
+      "nombre": "Python",
+      "categoria": "Language",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-nodejs",
+      "nombre": "Node.js",
+      "categoria": "Framework",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-agile",
+      "nombre": "Agile/Scrum",
+      "categoria": "Soft Skill",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-leadership",
+      "nombre": "Liderazgo Técnico",
+      "categoria": "Soft Skill",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-architecture",
+      "nombre": "Arquitectura de Software",
+      "categoria": "Soft Skill",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-ci-cd",
+      "nombre": "CI/CD",
+      "categoria": "Tool",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-design-patterns",
+      "nombre": "Design Patterns",
+      "categoria": "Framework",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-clean-code",
+      "nombre": "Clean Code",
+      "categoria": "Soft Skill",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-tdd",
+      "nombre": "TDD",
+      "categoria": "Soft Skill",
+      "nivel": "Avanzado"
+    },
+    {
+      "id": "t-pucp",
+      "nombre": "PUCP",
+      "categoria": "Tool",
+      "nivel": "Básico"
+    },
+    {
+      "id": "t-ingenieria-software",
+      "nombre": "Ingeniería de Software",
+      "categoria": "Soft Skill",
+      "nivel": "Expert"
+    },
+    {
+      "id": "t-bcp",
+      "nombre": "BCP",
+      "categoria": "Tool",
+      "nivel": "Básico"
+    },
+    {
+      "id": "t-fintech",
+      "nombre": "FinTech",
+      "categoria": "Soft Skill",
+      "nivel": "Intermedio"
+    },
+    {
+      "id": "t-pandero",
+      "nombre": "Pandero",
+      "categoria": "Tool",
+      "nivel": "Básico"
+    },
+    {
+      "id": "t-automotive",
+      "nombre": "Automotive/Retail",
+      "categoria": "Soft Skill",
+      "nivel": "Intermedio"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "proj-pandero-001",
+  "tipo": "PROYECTO",
+  "header": {
+    "nombre": "Plataforma Pandero",
+    "descripcion_general": "Desarrollo de plataforma de e-commerce y gestión de inventario para empresa de retail",
+    "url": null,
+    "periodo": {
+      "inicio": "2023-01",
+      "fin": "2024-10"
+    }
+  },
+  "bloques_logros": [
+    {
+      "id": "l-proj-pan-01",
+      "descripcion": "Desarrollo de frontend con React y TypeScript, mejorando UX en 35%",
+      "tags_relacionados": ["t-react", "t-typescript", "t-javascript"]
+    },
+    {
+      "id": "l-proj-pan-02",
+      "descripcion": "Backend con Node.js y Express, procesando 1000+ transacciones diarias",
+      "tags_relacionados": ["t-nodejs", "t-javascript"]
+    },
+    {
+      "id": "l-proj-pan-03",
+      "descripcion": "Integración con MongoDB para gestión de inventario en tiempo real",
+      "tags_relacionados": ["t-mongodb", "t-nodejs"]
+    },
+    {
+      "id": "l-proj-pan-04",
+      "descripcion": "Implementación de CI/CD con GitHub Actions y Docker, reduciendo deployment time en 50%",
+      "tags_relacionados": ["t-docker", "t-ci-cd", "t-git"]
+    },
+    {
+      "id": "l-proj-pan-05",
+      "descripcion": "Desarrollo de APIs REST para integración con sistemas de pago y logística",
+      "tags_relacionados": ["t-rest-api", "t-nodejs"]
+    }
+  ]
+}

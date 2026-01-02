@@ -1,0 +1,65 @@
+{
+  "id": "exp-nttdata-001",
+  "tipo": "EXPERIENCIA",
+  "header": {
+    "entidad": "NTT Data (Cliente BCP)",
+    "titulo_rol": "Senior Software Developer",
+    "periodo": {
+      "inicio": "2024-11",
+      "fin": null,
+      "actual": true
+    }
+  },
+  "bloques_logros": [
+    {
+      "id": "l-ntt-01",
+      "descripcion": "Diseño y aprovisionamiento de microservicios críticos usando Java 11 y Spring Boot para aplicaciones bancarias de alto volumen",
+      "tags_relacionados": ["t-java11", "t-springboot", "t-microservices", "t-bcp"]
+    },
+    {
+      "id": "l-ntt-02",
+      "descripcion": "Implementación de arquitectura serverless con Azure Functions para procesamiento de transacciones en tiempo real",
+      "tags_relacionados": ["t-azure-functions", "t-microservices", "t-architecture"]
+    },
+    {
+      "id": "l-ntt-03",
+      "descripcion": "Diseño de APIs RESTful escalables siguiendo principios de Clean Architecture y patrones de diseño enterprise",
+      "tags_relacionados": ["t-rest-api", "t-design-patterns", "t-clean-code", "t-architecture"]
+    },
+    {
+      "id": "l-ntt-04",
+      "descripcion": "Integración con Azure Cosmos DB para almacenamiento de datos NoSQL de alta disponibilidad y baja latencia",
+      "tags_relacionados": ["t-azure-cosmosdb", "t-microservices"]
+    },
+    {
+      "id": "l-ntt-05",
+      "descripcion": "Implementación de pipelines CI/CD con Azure DevOps, reduciendo el tiempo de despliegue en 40%",
+      "tags_relacionados": ["t-azure-devops", "t-ci-cd", "t-docker"]
+    },
+    {
+      "id": "l-ntt-06",
+      "descripcion": "Liderazgo técnico del equipo de desarrollo, estableciendo mejores prácticas de código y revisión de arquitectura",
+      "tags_relacionados": ["t-leadership", "t-architecture", "t-agile", "t-clean-code"]
+    },
+    {
+      "id": "l-ntt-07",
+      "descripcion": "Desarrollo de pruebas unitarias e integración con JUnit y Mockito, alcanzando cobertura de código superior al 85%",
+      "tags_relacionados": ["t-junit", "t-mockito", "t-tdd", "t-clean-code"]
+    },
+    {
+      "id": "l-ntt-08",
+      "descripcion": "Optimización de consultas SQL y diseño de esquemas de base de datos Oracle para mejorar el rendimiento en 30%",
+      "tags_relacionados": ["t-sql", "t-oracle", "t-architecture"]
+    },
+    {
+      "id": "l-ntt-09",
+      "descripcion": "Implementación de patrones de resiliencia (Circuit Breaker, Retry) con Spring Cloud para garantizar alta disponibilidad",
+      "tags_relacionados": ["t-spring-cloud", "t-microservices", "t-design-patterns"]
+    },
+    {
+      "id": "l-ntt-10",
+      "descripcion": "Mentoría de desarrolladores junior en prácticas de desarrollo ágil, TDD y principios SOLID",
+      "tags_relacionados": ["t-leadership", "t-agile", "t-tdd", "t-clean-code"]
+    }
+  ]
+}

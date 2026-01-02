@@ -1,0 +1,75 @@
+# Configuration for Semantic Versioning
+# This file defines how versions are bumped and changelog is generated
+
+versioning:
+  # Semantic versioning format
+  scheme: semver
+  
+  # Version file location
+  version_file: package.json
+  
+  # Log file for version tracking
+  log_file: .version-log.json
+  
+  # Changelog file
+  changelog_file: CHANGELOG.md
+
+bump_rules:
+  # Major: Breaking changes, architectural updates
+  major:
+    description: "Breaking changes or major features"
+    bump_package: true
+    update_changelog: true
+    create_git_tag: true
+  
+  # Minor: New features, enhancements
+  minor:
+    description: "New features or minor enhancements"
+    bump_package: true
+    update_changelog: true
+    create_git_tag: false
+  
+  # Patch: Bug fixes, optimizations
+  patch:
+    description: "Bug fixes, optimizations (default)"
+    bump_package: true
+    update_changelog: true
+    create_git_tag: false
+
+input_formats:
+  # Supported entity types in JSON
+  - EXPERIENCIA
+  - EDUCACION
+  - PROYECTO
+
+changelog:
+  # Include file listings
+  include_files: true
+  
+  # Include descriptions
+  include_descriptions: true
+  
+  # Group by version type
+  group_by_type: true
+  
+  # Include timestamps
+  include_timestamps: true
+
+git:
+  # Auto-commit version changes
+  auto_commit: false
+  
+  # Commit message template
+  commit_template: "chore: bump version to v{version}"
+  
+  # Auto-tag releases
+  auto_tag: false
+  
+  # Tag prefix
+  tag_prefix: "v"
+
+commands:
+  check: "Show current version and history"
+  bump: "Bump version (patch|minor|major)"
+  changelog: "Generate or update CHANGELOG.md"
+  view: "View CHANGELOG.md contents"

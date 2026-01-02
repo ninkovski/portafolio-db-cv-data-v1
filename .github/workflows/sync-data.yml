@@ -1,0 +1,80 @@
+name: Data Sync - CV Master
+
+# Trigger: Se ejecuta cuando hay cambios en archivos JSON dentro de la carpeta inputs/data/
+# (Solo sincroniza archivos de datos, no esquemas)
+on:
+  push:
+    paths:
+      - 'inputs/data/*.json'
+  workflow_dispatch: # Permite ejecución manual
+
+jobs:
+  sync-cv-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout del repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Necesario para hacer commits posteriores
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # 2. Configurar Node.js
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      # 3. Instalar dependencias
+      - name: Install dependencies
+        run: npm ci
+      
+      # 4. Ejecutar sincronización
+      - name: Run Data Sync Manager
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          COSMOS_CONNECTION_STRING: ${{ secrets.COSMOS_CONNECTION_STRING }}
+          COSMOS_DATABASE_NAME: ${{ secrets.COSMOS_DATABASE_NAME || 'cv-database' }}
+          COSMOS_CONTAINER_NAME: ${{ secrets.COSMOS_CONTAINER_NAME || 'cv-data' }}
+        run: node scripts/sync-manager.js
+      
+      # 5. Post-procesamiento: Mover archivos procesados a data-master
+      - name: Move processed files to data-master
+        run: |
+          # Verificar si hay archivos en inputs/data/
+          if ls inputs/data/*.json 1> /dev/null 2>&1; then
+            echo "Moving processed files to data-master..."
+            mkdir -p data-master
+            mv inputs/data/*.json data-master/
+            echo "Files moved successfully"
+          else
+            echo "No files to move"
+          fi
+      
+      # 6. Commit y Push automático
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          
+          # Verificar si hay cambios
+          if [[ -n $(git status --porcelain) ]]; then
+            git add data-master/
+            git add inputs/data/
+            git commit -m "chore: sync completed - moved files to data-master [skip ci]"
+            git push
+            echo "Changes committed and pushed"
+          else
+            echo "No changes to commit"
+          fi
+      
+      # 7. Reporte de éxito
+      - name: Success notification
+        if: success()
+        run: |
+          echo "✅ Synchronization completed successfully!"
+          echo "📊 Data synced to Airtable and Cosmos DB"
+          echo "📁 Files moved to data-master/"

@@ -1,0 +1,29 @@
+{
+  "id": "edu-pucp-001",
+  "tipo": "EDUCACION",
+  "header": {
+    "institucion": "Pontificia Universidad Católica del Perú (PUCP)",
+    "titulo_grado": "Ingeniería de Software",
+    "periodo": {
+      "inicio": "2016-08",
+      "fin": "2020-12"
+    }
+  },
+  "detalles": [
+    {
+      "id": "det-pucp-01",
+      "descripcion": "Especialización en Ingeniería de Software con énfasis en arquitectura y patrones de diseño",
+      "tags_relacionados": ["t-architecture", "t-design-patterns", "t-ingenieria-software"]
+    },
+    {
+      "id": "det-pucp-02",
+      "descripcion": "Proyectos finales utilizando Java, Spring Framework y bases de datos relacionales",
+      "tags_relacionados": ["t-java11", "t-springboot", "t-sql"]
+    },
+    {
+      "id": "det-pucp-03",
+      "descripcion": "Cursos en metodologías ágiles, liderazgo y trabajo en equipo",
+      "tags_relacionados": ["t-agile", "t-leadership"]
+    }
+  ]
+}
